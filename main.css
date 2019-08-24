@@ -1,3 +1,37 @@
-body, html {
+body, html, #Home {
   background-color: #EE5050;
 }
+
+#Home {
+}
+
+.profile {
+  width: 30vw;
+  height: auto;
+  float: left;
+  clear: both;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  margin: 50px;
+}
+
+.intro-text {
+  font-family: 'Raleway', sans-serif;
+  float: right;
+  clear: both;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.intro-text h1 {
+  color: white;
+  font-size: 5vw;
+}
+
+.intro-text h3 {
+  color: rgba(254,254,254,0.65);
+  font-size: 3vw;
+}
+
+.intro-text p { font-size: 1.5vw; }
