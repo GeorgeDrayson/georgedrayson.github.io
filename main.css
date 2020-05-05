@@ -16,8 +16,10 @@ body {
   padding-top: 35vh;
 }
 
+/* Typography */
+
 h1 {
-  font-size: 5rem;
+  font-size: 5em;
   margin: 0;
 }
 
@@ -26,6 +28,21 @@ span {
   font-size: 0.3em;
   text-transform: uppercase;
 }
+
+@media (max-width: 60rem) {
+  html { font-size: 75%;}
+}
+
+@media (max-width: 40rem) {
+  html { font-size: 60%;}
+}
+
+@media (max-width: 35rem) {
+  html { font-size: 45%;}
+}
+
+
+/* Social Media Icons  */
 
 ul {
   margin: 0;
@@ -45,4 +62,8 @@ a {
 
 a:hover, a:focus {
   opacity: 0.8;
+}
+
+.social-logo {
+  width: 3em;
 }
