@@ -21,9 +21,17 @@ body {
   padding-left: 2em;
   padding-right: 2em;
 }
+
+.profile_image {
+  width: 10em; /* Adjust the width of the image */
+  height: 10em; /* Adjust the height of the image */
+  border-radius: 50%; /* Make the image circular */
+  margin-top: 4em;
+  margin-bottom: 1em; /* Add some space between the image and the content */
+}
 /* Typography */
 .title {
-  font-size: 5em;
+  font-size: 4em;
 }
 
 h1 {
@@ -37,55 +45,45 @@ h1 {
 }
 
 .social-icons ul {
-  list-style: none;
   padding: 0;
   margin: 0;
-  text-align: center; /* Center social icons horizontally */
 }
 
 .social_icons li {
   display: inline-block;
-  margin: 1em;
+  margin: 1em; /* Adjust as needed */
 }
-
-.social_icons li{
-  display: inline-block;
-}
-
 
 @media (max-width: 60rem) {
   html { font-size: 75%;}
-}
-
-@media (max-width: 35rem) {
-  html { font-size: 50%;}
 }
 /*
 @media (max-width: 35rem) {
   html { font-size: 45%;}
 }
 */
-
+/*border-bottom: 0.15em solid #222222; /* Change the color of the underline */
 /* Social Media Icons  */
 
 .social_icons a {
   text-decoration: none;
-  padding: 0em;
 }
 
-.social_icons a:hover, a:focus {
-  opacity: 0.8;
+a:hover, a:focus {
+  opacity: 0.7;
 }
 
 .social-logo {
-  width: 3em;
+  width: 3.5em;
 }
 
 .description a {
-  text-decoration: none;
   color: white;
+  text-decoration: none;
 }
 
-.description a:hover {
-  background: #565656
+.link-icon {
+  font-size: smaller; /* Adjust the size of the icon */
+  margin-right: 2px; /* Adjust as needed to control spacing between icon and link text */
 }
+
