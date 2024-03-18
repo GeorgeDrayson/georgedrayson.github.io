@@ -18,8 +18,6 @@ body {
   height: 100vh; /* Full height of viewport */
   background-color: #FA434B;
   flex-direction: column;
-  padding-left: 2em;
-  padding-right: 2em;
 }
 
 .profile_image {
@@ -44,7 +42,7 @@ h1 {
   padding-top: 0.5em;
 }
 
-.social-icons ul {
+ul {
   padding: 0;
   margin: 0;
 }
