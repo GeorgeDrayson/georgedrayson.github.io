@@ -13,19 +13,21 @@ body {
 
 .landing-page {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  height: 100vh; /* Full height of viewport */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   background-color: #FA434B;
   flex-direction: column;
+  padding: 1em;
 }
 
 .profile_image {
-  width: 10em; /* Adjust the width of the image */
-  height: 10em; /* Adjust the height of the image */
-  border-radius: 50%; /* Make the image circular */
-  margin-top: 4em;
-  margin-bottom: 1em; /* Add some space between the image and the content */
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  object-fit: cover;
 }
 /* Typography */
 .title {
@@ -38,8 +40,13 @@ h1 {
 
 .description {
   display: block;
-  font-size: 1.5em;
+  font-size: 1.2em;
   padding-top: 0.5em;
+  max-width: 40em;
+  line-height: 1.6;
+  text-align: left;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 ul {
@@ -47,19 +54,40 @@ ul {
   margin: 0;
 }
 
+.social_icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
 .social_icons li {
-  display: inline-block;
-  margin: 1em; /* Adjust as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 60rem) {
   html { font-size: 75%;}
 }
-/*
+
 @media (max-width: 35rem) {
-  html { font-size: 45%;}
+  html { font-size: 65%;}
+  
+  .profile_image {
+    width: 8em;
+    height: 8em;
+    margin-top: 0;
+  }
+  
+  .title {
+    font-size: 3em;
+  }
+  
+  .social_icons {
+    gap: 0.5em;
+  }
 }
-*/
 /*border-bottom: 0.15em solid #222222; /* Change the color of the underline */
 /* Social Media Icons  */
 
@@ -73,11 +101,27 @@ a:hover, a:focus {
 
 .social-logo {
   width: 3.5em;
+  height: 3.5em;
+  display: inline-block;
+}
+
+.hf-emoji {
+  font-size: 2.8em;
+  line-height: 1;
+  vertical-align: middle;
+  width: auto;
+  height: auto;
 }
 
 .description a {
   color: white;
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.description .email {
+  margin-top: 1em;
+  text-align: center;
 }
 
 .link-icon {
