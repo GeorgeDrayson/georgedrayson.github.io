@@ -93,6 +93,7 @@ ul {
 
 .social_icons a {
   text-decoration: none;
+  color: inherit;
 }
 
 a:hover, a:focus {
@@ -100,17 +101,9 @@ a:hover, a:focus {
 }
 
 .social-logo {
-  width: 3.5em;
-  height: 3.5em;
-  display: inline-block;
-}
-
-.hf-emoji {
-  font-size: 2.8em;
-  line-height: 1;
-  vertical-align: middle;
-  width: auto;
-  height: auto;
+  width: 2.8em;
+  height: 2.8em;
+  stroke: white;
 }
 
 .description a {
